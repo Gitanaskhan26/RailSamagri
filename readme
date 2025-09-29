@@ -1,0 +1,17 @@
+graph LR
+    subgraph 1. The Core Workflow
+        A[Vendor Portal] --> B[Registers component details]
+        B --> C[Railway App]
+        D[Laser marking] -- Permanently etches the QR "Digital Passport" onto the part. --> E[Digital Passport Icon]
+        B -- Links to --> D
+    end
+
+    subgraph 2. The AI Engine & Insights
+        F[Predictive Maintenance] --> G[Forecasts component failure <br> Remaining Useful Life (RUL) to prevent incidents]
+        G --> H[Anomaly Detection]
+    end
+
+    subgraph 3. The Key Outcomes
+        I[Enhanced Safety] -- Proactively replace at-risk components before they fail --> J(Safety Checkmark)
+        K[Data-Driven Quality] -- Rank vendor quality with real-world data to optimize procurement decisions --> L(Bar Chart with Magnifying Glass)
+    end
